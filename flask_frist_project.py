@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Flask Frist App"
+    return render_template('test.html')
 
 @app.route('/members')
 def members():
@@ -26,7 +26,7 @@ def hello(name):
     quote = quotes[randomNumber]
 
     return render_template(
-        'test.html',**locals())
+        'test.html')
 
 
 

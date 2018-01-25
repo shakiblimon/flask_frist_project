@@ -8,6 +8,14 @@ def index():
     app.debug = True
     return render_template('test.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/articles')
+def articles():
+    return render_template('articles.html')
+
 @app.route('/members')
 def members():
     return "Memebers"

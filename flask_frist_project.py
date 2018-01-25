@@ -16,6 +16,14 @@ def about():
 def articles():
     return render_template('articles.html')
 
+@app.route('/article')
+def article():
+    return  render_template('article.html')
+
+@app.route('/login' , methods=['GET', 'POST'])
+def login():
+    return render_template('login.html')
+
 @app.route('/members')
 def members():
     return "Memebers"

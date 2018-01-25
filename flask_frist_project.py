@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    app.debug = True
     return render_template('test.html')
 
 @app.route('/members')
